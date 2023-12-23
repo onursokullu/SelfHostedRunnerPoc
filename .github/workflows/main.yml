@@ -3,7 +3,7 @@ name: .NET Core Deploy to IIS
 on: 
   # push:
     # branches:
-    #   - "self-hosted"
+    #   - "main"
   workflow_dispatch:
 
 jobs:
