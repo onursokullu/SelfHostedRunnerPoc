@@ -22,7 +22,7 @@ jobs:
     
     # dotnet build and publish
     - name: Build with dotnet
-      run: dotnet build --configuration Release ./dotnetcore-webapi
+      run: dotnet build --configuration Release ./SelfHostedRunnerPoc.csproj
 
     - name: dotnet publish 
       run: |
