@@ -26,10 +26,10 @@ jobs:
 
     - name: dotnet publish 
       run: |
-        dotnet publish -c release -o ./dotnetcore-webapi
+        dotnet publish -c release -o ./SelfHostedRunnerPoc
 
     - name: Deploy to IIS
       run: |
         iisreset /stop
-        Copy-Item ./dotnetcorewebapp/* C:/inetpub/wwwroot/dotnetcore-webapp -Recurse -Force
+        Copy-Item ./SelfHostedRunnerPoc/* C:/inetpub/wwwroot/SelfHostedRunnerPoc -Recurse -Force
         iisreset /start
